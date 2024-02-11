@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Open+Sans:wght@600&family=Poppins:wght@300;800&family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--main-bgcolor);
+}
+section{
+    padding: 0 5%;
+}
+footer{
+    padding: 0 5%;
+}
+:root{
+    --main-color: #233556;
+    --heading-color:#081b29; 
+    --subheading-color: #272829;
+    --font-color:#081b29;
+    --button-bgcolor:#081b29;
+    --main-bgcolor:#eeeeee;
+    --story-page-mainbg:#f8f6f4;
+    --section-bgcolor:#ffffff;
+    --specific-bgcolor:#dddddd; 
+    --nav-bg:#f8f8f8;
+    --main-ff:'GFS Didot', serif;
+    --heading-ff:'Poppins', sans-serif;
+    --subheading-ff:'Roboto', sans-serif;
+    --paragraph-ff:'Poppins', sans-serif;
+    --manu-ff:'Open Sans', sans-serif;
+    --button-ff:'Open Sans', sans-serif;
+}
+
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--main-ff);
+    color: var(--main-color);
+    margin-bottom:.7rem; 
+}
+
+.h1-span{
+    background-color: orange;
+    padding: .3rem .7rem;
+    border-radius: 10px;
+    color: var(--section-bgcolor);
+    display: inline-block;
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+}
+.stories-h1{
+    font-size: 4rem;
+    font-family: var( --heading-ff);
+    color: var(--heading-color);
+    margin-bottom:.7rem; 
+    text-align: left;
+}
+h2{
+    font-size: 3rem;
+    color: var(--heading-color);
+    font-family: var( --heading-ff);
+    text-align: center;
+    padding: 2rem 0;
+    min-height: 20vh;
+}
+.h2-span{
+    background-color: orange;
+    padding: .3rem .7rem;
+    border-radius: 10px;
+    color: var(--section-bgcolor);
+    display: inline-block;
+}
+h3{
+    font-size: 2.5rem;
+    color:var(--subheading-color);
+    font-family: var(--subheading-ff);
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+}
+.privacy-underline h3{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.privacy-underline h3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    background-color: var(--subheading-color);
+    width: 100%;
+    height: 3px;
+}
+h4{
+    font-size: 2rem;
+    color: #000000;
+    font-family: var(--subheading-ff);
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+}
+p{
+    font-size: 1.7rem;
+    font-family: var(--paragraph-ff);
+    color: var(--font-color);
+}
+.publisher{
+    color: var(--heading-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.button .btn{
+    margin-top: 1rem;
+    background-color: var(--button-bgcolor);
+    border-radius: 10px;
+
+}
+.button .btn a{
+    font-size: 1.7rem;
+    font-family:var(--button-ff);
+    background-color: var(--button-bgcolor);
+    color: var(--section-bgcolor);
+    display: inline-block;
+    padding: 1rem 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid var(--main-color);
+    background: transparent;
+    border-radius: 10px;
+}
+.button .btn:active{
+    scale: 0.9;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-instagram{
+    color:#fd1d1d;
+}
+.fa-envelope{
+    color: #007bff;
+}
+
+
+
+
+@media(max-width: 991px){
+    h1{
+        font-size: 3.5rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .stories-h1{
+        font-size: 3.5rem;
+    }
+}
+@media(max-width: 768px){
+    h1{
+        font-size: 3rem;
+    }
+    .stories-h1{
+        font-size: 3rem;
+    }
+}
+@media(max-width: 450px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .stories-h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    h4{
+        font-size: 1.6rem;
+    }
+    .publisher{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 350px){
+    .stories-h1{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.6rem;
+    }
+}
